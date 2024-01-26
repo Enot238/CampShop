@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>КОШЕРНО</title>
+</head>
+<body>
+    <header>
+        <h1>Ласкаво просимо в "КОШЕРНО"</h1>
+        <a href="https://send.monobank.ua/jar/34z8ChuGFG" class="payment-button">Оплатити</a>
+    </header>
+
+    <!-- Поле пошуку -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Пошук за назвою товару">
+        <button id="searchButton">Пошук</button>
+    </div>
+
+        <!-- Елемент корзини -->
+    <div id="cart">
+        <h2>Кошик</h2>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Товар</th>
+                    <th>Ціна</th>
+                    <th>Кількість</th>
+                </tr>
+            </thead>
+            <tbody id="cartBody"></tbody>
+        </table>
+    </div>
+
+
+    <!-- Елемент для відображення загальної ціни -->
+    <div id="totalPrice">Загальна ціна: 0 грн</div>
+    
+    <!-- Список товарів -->
+    <div id="product-list"></div>
+
+    <!-- Кнопка прокрутки вгору -->
+    <button class="scrollToTop" onclick="scrollToTop()"></button>
+
+    <footer>
+        <p>&copy; 2024 КОШЕРНО Усі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript для прокручування вгору
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Плавна прокрутка
+            });
+        }
+    </script>
+</body>
+</html>
