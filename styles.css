@@ -217,3 +217,16 @@ button.removeButton:hover {
         width: 100%; /* Товари будуть відображатися на всю ширину екрану */
     }
 }
+
+
+.marquee { /* видкість дігущої строки*/
+            width: 100%;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+@keyframes marquee {
+           0% { transform: translateX(50%); }
+           100% { transform: translateX(-100%); }
+        }
+
+
