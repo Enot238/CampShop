@@ -222,7 +222,7 @@ button.removeButton:hover {
 .marquee {
     white-space: nowrap; /* Забороняє перенос тексту на новий рядок */
     overflow: hidden; /* Ховає будь-який текст, який виходить за межі контейнера */
-    animation: marquee 10s linear infinite; /* Застосовує анімацію з назвою "marquee" */
+    animation: marquee 20s linear infinite; /* Застосовує анімацію з назвою "marquee" */
 }
 
 @keyframes marquee {
