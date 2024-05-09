@@ -219,14 +219,15 @@ button.removeButton:hover {
 }
 
 
-.marquee { /* видкість дігущої строки*/
-            width: 100%;
-            white-space: nowrap;
-            animation: marquee 10s linear infinite;
-        }
+.marquee {
+    white-space: nowrap; /* Забороняє перенос тексту на новий рядок */
+    overflow: hidden; /* Ховає будь-який текст, який виходить за межі контейнера */
+    animation: marquee 10s linear infinite; /* Застосовує анімацію з назвою "marquee" */
+}
+
 @keyframes marquee {
-           0% { transform: translateX(50%); }
-           100% { transform: translateX(-100%); }
-        }
+    0% { transform: translateX(100%); } /* Початкова позиція зсуву вправо на 100% ширини контейнера */
+    100% { transform: translateX(-100%); } /* Кінцева позиція зсуву вліво на 100% ширини контейнера */
+}
 
 
