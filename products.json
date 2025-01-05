@@ -1,0 +1,244 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Маленькі круасани",
+      "price": 10,
+      "image": "img/Remove-bg.ai_1706196095825.png",
+      "category": "Випічка",
+      "description": "Свіжі маленькі круасани",
+      "inStock": true,
+      "weight": "50г",
+      "popularity": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Печиво Lovita",
+      "price": 30,
+      "image": "img/Remove-bg.ai_1706195976999.png",
+      "category": "Солодощі",
+      "description": "Печиво Lovita з шоколадом",
+      "inStock": true,
+      "weight": "100г",
+      "popularity": 4.2
+    },
+    {
+      "id": 3,
+      "name": "Снікерс",
+      "price": 25,
+      "image": "img/Remove-bg.ai_1706195800677.png",
+      "category": "Батончики",
+      "description": "Шоколадний батончик з арахісом та карамеллю",
+      "inStock": true,
+      "weight": "55г",
+      "popularity": 4.8
+    },
+    {
+      "id": 4,
+      "name": "Батончики Рошен",
+      "price": 17,
+      "image": "img/Remove-bg.ai_1706195749763.png",
+      "category": "Батончики",
+      "description": "Батончик від української компанії Рошен",
+      "inStock": true,
+      "weight": "40г",
+      "popularity": 4.0
+    },
+    {
+      "id": 5,
+      "name": "Батончик Lion",
+      "price": 20,
+      "image": "img/Remove-bg.ai_1706196062429.png",
+      "category": "Батончики",
+      "description": "Хрусткий батончик з карамеллю",
+      "inStock": true,
+      "weight": "42г",
+      "popularity": 4.3
+    },
+    {
+      "id": 6,
+      "name": "Баунті",
+      "price": 25,
+      "image": "img/Remove-bg.ai_1706196057682.png",
+      "category": "Батончики",
+      "description": "Батончик з кокосовою начинкою",
+      "inStock": true,
+      "weight": "55г",
+      "popularity": 4.6
+    },
+    {
+      "id": 7,
+      "name": "Рошен вайфля",
+      "price": 10,
+      "image": "img/Remove-bg.ai_1706195758998.png",
+      "category": "Випічка",
+      "description": "Вафлі від компанії Рошен",
+      "inStock": true,
+      "weight": "30г",
+      "popularity": 4.1
+    },
+    {
+      "id": 8,
+      "name": "Круасан Великий",
+      "price": 30,
+      "image": "img/Remove-bg.ai_1706195812518.png",
+      "category": "Випічка",
+      "description": "Великий свіжий круасан",
+      "inStock": true,
+      "weight": "100г",
+      "popularity": 4.7
+    },
+    {
+      "id": 9,
+      "name": "Чіпси",
+      "price": 50,
+      "image": "img/Remove-bg.ai_1706195782114.png",
+      "category": "Снеки",
+      "description": "Картопляні чіпси з сіллю",
+      "inStock": true,
+      "weight": "133г",
+      "popularity": 4.9
+    },
+    {
+      "id": 10,
+      "name": "Хрум теам",
+      "price": 20,
+      "image": "img/Remove-bg.ai_1706195770953.png",
+      "category": "Снеки",
+      "description": "Хрусткі снеки",
+      "inStock": true,
+      "weight": "80г",
+      "popularity": 4.0
+    },
+    {
+      "id": 11,
+      "name": "Семки",
+      "price": 40,
+      "image": "img/Remove-bg.ai_1706195733060.png",
+      "category": "Снеки",
+      "description": "Смажене насіння соняшника",
+      "inStock": true,
+      "weight": "150г",
+      "popularity": 4.4
+    },
+    {
+      "id": 12,
+      "name": "Соняшник Санич",
+      "price": 40,
+      "image": "img/Remove-bg.ai_1706196255595.png",
+      "category": "Снеки",
+      "description": "Насіння соняшника від ТМ Санич",
+      "inStock": true,
+      "weight": "150г",
+      "popularity": 4.3
+    },
+    {
+      "id": 13,
+      "name": "Арахіс",
+      "price": 25,
+      "image": "img/Remove-bg.ai_1706196264924.png",
+      "category": "Снеки",
+      "description": "Смажений солоний арахіс",
+      "inStock": true,
+      "weight": "100г",
+      "popularity": 4.5
+    },
+    {
+      "id": 14,
+      "name": "Cola/Fanta/Sprite",
+      "price": 25,
+      "image": "img/Remove-bg.ai_1706196317645.png",
+      "category": "Напої",
+      "description": "Газовані напої в асортименті",
+      "inStock": true,
+      "volume": "0.5л",
+      "popularity": 4.8
+    },
+    {
+      "id": 15,
+      "name": "Моршинська газована",
+      "price": 25,
+      "image": "img/Remove-bg.ai_1706196139013.png",
+      "category": "Напої",
+      "description": "Газована мінеральна вода",
+      "inStock": true,
+      "volume": "0.5л",
+      "popularity": 4.2
+    },
+    {
+      "id": 16,
+      "name": "Вода Девайт",
+      "price": 20,
+      "image": "img/Remove-bg.ai_1706196242269.png",
+      "category": "Напої",
+      "description": "Негазована вода",
+      "inStock": true,
+      "volume": "0.5л",
+      "popularity": 4.0
+    },
+    {
+      "id": 17,
+      "name": "Кава",
+      "price": 15,
+      "image": "img/Remove-bg.ai_1706197267369.png",
+      "category": "Гарячі напої",
+      "description": "Натуральна чорна кава",
+      "inStock": true,
+      "volume": "200мл",
+      "popularity": 4.7
+    },
+    {
+      "id": 18,
+      "name": "Кава з молоком",
+      "price": 25,
+      "image": "img/Remove-bg.ai_1706196212973.png",
+      "category": "Гарячі напої",
+      "description": "Кава з додаванням молока",
+      "inStock": true,
+      "volume": "200мл",
+      "popularity": 4.6
+    },
+    {
+      "id": 19,
+      "name": "Чай",
+      "price": 10,
+      "image": "img/Remove-bg.ai_1706196123401.png",
+      "category": "Гарячі напої",
+      "description": "Чай в асортименті",
+      "inStock": true,
+      "volume": "200мл",
+      "popularity": 4.1
+    },
+    {
+      "id": 20,
+      "name": "Маккава",
+      "price": 10,
+      "image": "img/Remove-bg.ai_1706196215551.png",
+      "category": "Гарячі напої",
+      "description": "Розчинна кава",
+      "inStock": true,
+      "volume": "200мл",
+      "popularity": 4.0
+    },
+    {
+      "id": 21,
+      "name": "Жуйки",
+      "price": 25,
+      "image": "img/Remove-bg.ai_1706196108851.png",
+      "category": "Солодощі",
+      "description": "Жувальна гумка в асортименті",
+      "inStock": true,
+      "weight": "30г",
+      "popularity": 4.2
+    }
+  ],
+  "categories": [
+    "Випічка",
+    "Солодощі",
+    "Батончики",
+    "Снеки",
+    "Напої",
+    "Гарячі напої"
+  ],
+  "lastUpdated": "2024-01-05"
+}
