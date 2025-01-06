@@ -1,68 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КОШЕРНО - Ваш магазин кошерних продуктів</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>КОШЕРНО</title>
 </head>
 <body>
     <header>
-        <h1>Ласкаво просимо в "КОШЕРНО"</h1>
-        <a href="https://send.monobank.ua/jar/34z8ChuGFG" class="payment-button">Оплатити</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%B5%D1%80%D0%BD%D0%B0_%D1%97%D0%B6%D0%B0">КОШЕРНО</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="nav-items ms-auto d-flex align-items-center">
+                        <div class="categories me-3">
+                            <select id="categoryFilter" class="form-select">
+                                <option value="">Всі категорії</option>
+                            </select>
+                        </div>
+                        <div class="search-container d-flex me-3">
+                            <input type="text" id="searchInput" class="form-control me-2" placeholder="Пошук товарів...">
+                            <button id="searchButton" class="btn btn-outline-light">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="cart-icon position-relative" id="cartIcon">
+                            <button class="btn btn-outline-light">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">
+                                    0
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Поле пошуку -->
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Пошук за назвою товару">
-        <button id="searchButton">Пошук</button>
-    </div>
+    <main class="container py-4">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="price-filter">
+                    <label class="form-label">Ціна:</label>
+                    <input type="range" class="form-range" id="priceRange" min="0" max="200" step="10">
+                    <span id="priceValue" class="badge bg-secondary">100 грн</span>
+                </div>
+            </div>
+<!--            <div class="col-md-6">-->
+<!--                <div class="sort">-->
+<!--                    <select id="sortSelect" class="form-select">-->
+<!--                        <option value="name">За назвою</option>-->
+<!--                        <option value="priceAsc">Ціна (від низької)</option>-->
+<!--                        <option value="priceDesc">Ціна (від високої)</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
 
-        <!-- Елемент корзини -->
-    <div id="cart">
-        <h2>Кошик</h2>
-        <table id="cartTable">
-            <thead>
-                <tr>
-                    <th>Товар</th>
-                    <th>Ціна</th>
-                    <th>Кількість</th>
-                </tr>
-            </thead>
-            <tbody id="cartBody"></tbody>
-        </table>
-    </div>
+        <div id="product-list" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4"></div>
 
+        <!-- Cart Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Кошик</h5>
+                        <button type="button" class="btn-close" id="closeCart" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="cartItems"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="cart-total fw-bold">
+                            Загальна сума: <span id="cartTotal">0</span> грн
+                        </div>
+                        <a id="checkoutBtn" href="https://send.monobank.ua/jar/2pQqQghwHu" class="btn btn-success">Оформити замовлення</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <!-- Елемент для відображення загальної ціни -->
-    <div id="totalPrice">Загальна ціна: 0 грн</div>
-    
-    <!-- Список товарів -->
-    <div id="product-list"></div>
-
-    <!-- Кнопка прокрутки вгору -->
-    <button class="scrollToTop" onclick="scrollToTop()"></button>
-
-    <footer>
-
-        <p >
-        <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%B5%D1%80%D0%BD%D0%B0_%D1%97%D0%B6%D0%B0" > Посилання для допитливих</a></p>	
-        </p>
-        
-        <p class="marquee">&copy; 2024 КОШЕРНО Усі права захищені.</p>
-        
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Про нас</h3>
+                    <p>КОШЕРНО - ваш надійний постачальник кошерних продуктів</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Контакти</h3>
+                    <p>Email: info@kosher.ua</p>
+                    <p>Тел: +380 XX XXX XX XX</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Слідкуйте за нами</h3>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-telegram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 КОШЕРНО. Усі права захищені.</p>
+            </div>
+        </div>
     </footer>
 
+    <button id="scrollToTop" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        // JavaScript для прокручування вгору
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // Плавна прокрутка
-            });
-        }
-    </script>
 </body>
 </html>

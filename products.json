@@ -1,0 +1,253 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Маленькі круасани",
+      "price": 15,
+      "image": "img/cruasants.png",
+      "category": "Солодощі",
+      "description": "Свіжі маленькі круасани",
+      "inStock": true,
+      "weight": "50г",
+      "popularity": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Сок Джусік",
+      "price": 30,
+      "image": "img/juice.png",
+      "category": "Напої",
+      "description": "Сок яблуко-виноград",
+      "inStock": true,
+      "weight": "200ml",
+      "popularity": 4.2
+    },
+    {
+      "id": 3,
+      "name": "Снікерс",
+      "price": 50,
+      "image": "img/snickers.png",
+      "category": "Солодощі",
+      "description": "Шоколадний батончик з арахісом та карамеллю",
+      "inStock": true,
+      "weight": "55г",
+      "popularity": 4.8
+    },
+    {
+      "id": 4,
+      "name": "Батончики Рошен",
+      "price": 20,
+      "image": "img/Remove-bg.ai_1706195749763.png",
+      "category": "Солодощі",
+      "description": "Батончик від української компанії Рошен",
+      "inStock": true,
+      "weight": "40г",
+      "popularity": 4.0
+    },
+    {
+      "id": 5,
+      "name": "Батончик Lion",
+      "price": 45,
+      "image": "img/lion.png",
+      "category": "Солодощі",
+      "description": "Хрусткий батончик з карамеллю",
+      "inStock": true,
+      "weight": "42г",
+      "popularity": 4.3
+    },
+    {
+      "id": 6,
+      "name": "KitKat Кіт-Кат",
+      "price": 35,
+      "image": "img/kitkat.png",
+      "category": "Солодощі",
+      "description": "Батончик з кокосовою начинкою",
+      "inStock": true,
+      "weight": "55г",
+      "popularity": 4.6
+    },
+    {
+      "id": 7,
+      "name": "Зефір",
+      "price": 15,
+      "image": "img/cake.png",
+      "category": "Солодощі",
+      "description": "Зефір білий солодкий",
+      "inStock": true,
+      "weight": "30г",
+      "popularity": 4.1
+    },
+    {
+      "id": 8,
+      "name": "Пепсі",
+      "price": 50,
+      "image": "img/pepsi.png",
+      "category": "Напої",
+      "description": "Солодкий напій",
+      "inStock": true,
+      "weight": "100г",
+      "popularity": 4.7
+    },
+    {
+      "id": 9,
+      "name": "Мохіто mojito",
+      "price": 50,
+      "image": "img/mojito.png",
+      "category": "Напої",
+      "description": "Солодкий напій",
+      "inStock": true,
+      "weight": "133г",
+      "popularity": 4.9
+    },
+    {
+      "id": 10,
+      "name": "Coca-Cola",
+      "price": 60,
+      "image": "img/cocacola.png",
+      "category": "Напої",
+      "description": "Солодкий напій",
+      "inStock": true,
+      "weight": "80г",
+      "popularity": 4.0
+    },
+    {
+      "id": 11,
+      "name": "Чай холодний",
+      "price": 40,
+      "image": "img/cold_tea.png",
+      "category": "Напої",
+      "description": "Солодкий напій",
+      "inStock": true,
+      "weight": "150г",
+      "popularity": 4.4
+    },
+    {
+      "id": 12,
+      "name": "Моршинська Вода",
+      "price": 35,
+      "image": "img/morshynska.png",
+      "category": "Напої",
+      "description": "Вода",
+      "inStock": true,
+      "weight": "150г",
+      "popularity": 4.3
+    },
+    {
+      "id": 13,
+      "name": "Марс Mars",
+      "price": 35,
+      "image": "img/mars.png",
+      "category": "Солодке",
+      "description": "Батончик",
+      "inStock": true,
+      "weight": "100г",
+      "popularity": 4.5
+    },
+    {
+      "id": 14,
+      "name": "Чіпси Лейс Lays",
+      "price": 70,
+      "image": "img/lays_max.png",
+      "category": "Cнеки",
+      "description": "Чіпси з крабом звичайні і макс",
+      "inStock": true,
+      "volume": "0.5л",
+      "popularity": 4.8
+    },
+    {
+      "id": 15,
+      "name": "Чіпси Чіпстерс",
+      "price": 55,
+      "image": "img/chipsters.png",
+      "category": "Cнеки",
+      "description": "Чіпси гриль",
+      "inStock": true,
+      "volume": "0.5л",
+      "popularity": 4.2
+    },
+    {
+      "id": 16,
+      "name": "Сухарики",
+      "price": 35,
+      "image": "img/crunch.png",
+      "category": "Cнеки",
+      "description": "Сухарики Flint",
+      "inStock": true,
+      "volume": "0.5л",
+      "popularity": 4.0
+    },
+    {
+      "id": 17,
+      "name": "Кава",
+      "price": 15,
+      "image": "img/Remove-bg.ai_1706197267369.png",
+      "category": "Гарячі напої",
+      "description": "Натуральна чорна кава",
+      "inStock": true,
+      "volume": "200мл",
+      "popularity": 4.7
+    },
+    {
+      "id": 18,
+      "name": "Кава з молоком",
+      "price": 15,
+      "image": "img/Remove-bg.ai_1706196212973.png",
+      "category": "Гарячі напої",
+      "description": "Кава з додаванням молока",
+      "inStock": true,
+      "volume": "200мл",
+      "popularity": 4.6
+    },
+    {
+      "id": 19,
+      "name": "Чай",
+      "price": 10,
+      "image": "img/tea.png",
+      "category": "Напої",
+      "description": "Чай в асортименті",
+      "inStock": true,
+      "volume": "200мл",
+      "popularity": 4.1
+    },
+    {
+      "id": 20,
+      "name": "Насіння Семки Санич",
+      "price": 10,
+      "image": "img/seeds.png",
+      "category": "Cнеки",
+      "description": "Розчинна кава",
+      "inStock": true,
+      "volume": "200мл",
+      "popularity": 4.0
+    },
+    {
+      "id": 21,
+      "name": "Горішки BigBob малі Small",
+      "price": 35,
+      "image": "img/bigbob.png",
+      "category": "Cнеки",
+      "description": "Горішки",
+      "inStock": true,
+      "weight": "30г",
+      "popularity": 4.2
+    },
+    {
+      "id": 22,
+      "name": "Горішки BigBob великі Big",
+      "price": 60,
+      "image": "img/bigbob_X.png",
+      "category": "Cнеки",
+      "description": "Горішки",
+      "inStock": true,
+      "weight": "30г",
+      "popularity": 4.2
+    }
+  ],
+  "categories": [
+    "Cнеки",
+    "Солодощі",
+    "Напої",
+    "Гарячі напої"
+  ],
+  "lastUpdated": "2024-01-05"
+}
