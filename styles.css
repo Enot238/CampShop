@@ -65,6 +65,27 @@ main {
     flex-grow: 1;
 }
 
+#addToCartMessage {
+    z-index: 1050; /* Вище за інші елементи */
+    opacity: 0; /* Приховано за замовчуванням */
+    transition: opacity 0.5s ease-in-out; /* Анімація появи та зникнення */
+    position: fixed; /* Фіксоване положення */
+    top: 50%; /* Розташування по центру вертикально */
+    left: 50%; /* Розташування по центру горизонтально */
+    transform: translate(-50%, -50%); /* Вирівнювання точно по центру */
+    padding: 1rem 2rem; /* Зручний відступ */
+    text-align: center; /* Текст по центру */
+    max-width: 300px; /* Обмеження ширини */
+    border-radius: 8px; /* Згладжені кути */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тінь для гарного вигляду */
+}
+
+#addToCartMessage.show {
+    opacity: 1; /* Відображення повідомлення */
+}
+
+
+
 #scrollToTop {
     position: fixed;
     bottom: 20px;

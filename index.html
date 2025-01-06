@@ -12,13 +12,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%B5%D1%80%D0%BD%D0%B0_%D1%97%D0%B6%D0%B0">КОШЕРНО</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <button class="navbar-toggler" aria-pressed="true" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="" id="navbarContent">
                     <div class="nav-items ms-auto d-flex align-items-center">
                         <div class="categories me-3">
                             <select id="categoryFilter" class="form-select">
@@ -40,6 +40,13 @@
                             </button>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="price-filter">
+                            <label class="form-label">Ціна:</label>
+                            <input type="range" class="form-range" id="priceRange" min="0" max="200" step="10">
+                            <span id="priceValue" class="badge bg-secondary">100 грн</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -47,13 +54,7 @@
 
     <main class="container py-4">
         <div class="row mb-4">
-            <div class="col-md-6">
-                <div class="price-filter">
-                    <label class="form-label">Ціна:</label>
-                    <input type="range" class="form-range" id="priceRange" min="0" max="200" step="10">
-                    <span id="priceValue" class="badge bg-secondary">100 грн</span>
-                </div>
-            </div>
+
 <!--            <div class="col-md-6">-->
 <!--                <div class="sort">-->
 <!--                    <select id="sortSelect" class="form-select">-->
@@ -79,9 +80,9 @@
                         <div id="cartItems"></div>
                     </div>
                     <div class="modal-footer">
-                        <div class="cart-total fw-bold">
+                        <h1 class="cart-total fw-bold">
                             Загальна сума: <span id="cartTotal">0</span> грн
-                        </div>
+                        </h1>
                         <a id="checkoutBtn" href="https://send.monobank.ua/jar/2pQqQghwHu" class="btn btn-success">Оформити замовлення</a>
                     </div>
                 </div>
@@ -104,9 +105,9 @@
                 <div class="col-md-4">
                     <h3>Слідкуйте за нами</h3>
                     <div class="social-links">
-                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href="#" class="text-light"><i class="fab fa-telegram fa-2x"></i></a>
+                        <a href="https://www.instagram.com/youth_family.cv/profilecard/?igsh=MXNzYzBsa3YyazJ6aw==" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/youth_family.cv/profilecard/?igsh=MXNzYzBsa3YyazJ6aw==" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://t.me/lozivskaYouth" class="text-light"><i class="fab fa-telegram fa-2x"></i></a>
                     </div>
                 </div>
             </div>
@@ -120,6 +121,12 @@
     <button id="scrollToTop" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <div id="addToCartMessage" class="alert alert-success position-fixed fade fw-bold" role="alert">
+        Товар додано до корзини!
+    </div>
+
+
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
