@@ -1,6 +1,16 @@
 {
   "products": [
     {
+      "id": 23,
+      "name": "Благодійна пожертва",
+      "price": 50,
+      "category": "Благодійна пожертва",
+      "description": "Благодійна пожертва",
+      "inStock": true,
+      "weight": "50г",
+      "popularity": 4.5
+    },
+    {
       "id": 1,
       "name": "Маленькі круасани",
       "price": 15,

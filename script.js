@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="card-text">${product.description}</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="h5 mb-0">${product.price} грн</span>
-                            <button class="btn btn-primary addToCartButton" data-id="${product.id}">
-                                <i class="fas fa-cart-plus"></i> Додати
+                            <button class="btn btn-primary add-to-cart-button addToCartButton" data-id="${product.id}">
+                                <i class="fas fa-cart-plus "></i> Додати
                             </button>
                         </div>
                     </div>
@@ -98,6 +98,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Показувати повідомлення про додавання товару
+    function showAddToCartMessage() {
+        const messageElement = document.getElementById('addToCartMessage');
+        messageElement.classList.add('show'); // Показати повідомлення
+
+        // Прибрати повідомлення через 1 секунду
+        setTimeout(() => {
+            messageElement.classList.remove('show');
+        }, 1000);
+    }
+
     // Update cart display
     const updateCart = () => {
         cartItemsContainer.innerHTML = '';
@@ -137,6 +148,26 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCart();
     };
 
+    // Кнопка "Вгору"
+
+    // Показувати кнопку, коли сторінка прокручена вниз
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            scrollToTopButton.classList.add('show');
+        } else {
+            scrollToTopButton.classList.remove('show');
+        }
+    });
+
+    // Прокручування догори при кліку
+    scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+
     // Scroll to top functionality
     const toggleScrollToTopButton = () => {
         if (window.scrollY > 300) {
@@ -151,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.classList.contains('addToCartButton') || e.target.parentElement.classList.contains('addToCartButton')) {
             const button = e.target.classList.contains('addToCartButton') ? e.target : e.target.parentElement;
             addToCart(button.dataset.id);
+            showAddToCartMessage();
         }
     });
 
