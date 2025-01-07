@@ -147,7 +147,7 @@
       "name": "Марс Mars",
       "price": 35,
       "image": "img/mars.png",
-      "category": "Солодке",
+      "category": "Солодощі",
       "description": "Батончик",
       "inStock": true,
       "weight": "100г",
@@ -222,7 +222,7 @@
     {
       "id": 20,
       "name": "Насіння Семки Санич",
-      "price": 10,
+      "price": 50,
       "image": "img/seeds.png",
       "category": "Cнеки",
       "description": "Розчинна кава",
