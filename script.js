@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const searchButton = document.getElementById('searchButton');
     const scrollToTopButton = document.getElementById('scrollToTop');
+    const navbar = document.getElementById('navbar');
 
     let cart = [];
     let products = [];
@@ -154,8 +155,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 200) {
             scrollToTopButton.classList.add('show');
+            navbar.classList.add('fixed-top');
         } else {
             scrollToTopButton.classList.remove('show');
+            navbar.classList.remove('fixed-top');
         }
     });
 
